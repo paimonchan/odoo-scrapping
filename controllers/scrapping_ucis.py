@@ -22,7 +22,7 @@ class ScrappingUcis(Controller):
             csv += '\n'
         return csv
         
-    @route('/ucis', type='json', auth='public', methods=['GET'])
+    @route('/api/ucis', type='json', auth='public', methods=['GET'])
     def get_ucis(self):
         kwargs = request.jsonrequest
         receipt_number = kwargs.get('receipt_number') or False
