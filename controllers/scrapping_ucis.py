@@ -12,7 +12,7 @@ class ScrappingUcis(Controller):
     def get_ucis(self):
         kwargs = response = request.jsonrequest
         receipt_number = kwargs.get('receipt_number') or False
-        increament = kwargs.get('increamet') or 1
+        increament = kwargs.get('increment') or 1
         limit = kwargs.get('limit') or 1
 
         if not receipt_number:
